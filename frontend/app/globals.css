@@ -54,6 +54,7 @@ body {
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
   border-radius: var(--radius-card);
+  overflow: hidden;
 }
 
 /* ─── Gradient Text ─── */
@@ -676,4 +677,22 @@ body { overflow-x: clip; }
 }
 @media (max-width: 480px) {
   .hm-hide-xs { display: none !important; }
+}
+
+@media (max-width: 640px) {
+  .filter-bar { padding: 14px; }
+  .hm-chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0 -14px -8px;
+    padding: 4px 28px 12px 14px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+  }
+  .hm-chips::-webkit-scrollbar { display: none; }
+  .hm-chips > * { flex-shrink: 0; white-space: nowrap; }
 }

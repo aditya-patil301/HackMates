@@ -42,6 +42,7 @@ export default function InterestModal({ post, onClose, onSubmit }) {
           width: "100%", maxWidth: 460,
           boxShadow: "0 28px 70px rgba(6,13,31,0.25)",
           position: "relative",
+          overflow: "hidden"
         }}
       >
         {/* Gold accent bar */}

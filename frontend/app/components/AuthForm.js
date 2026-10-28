@@ -66,14 +66,14 @@ export default function AuthForm({ mode, onLoggedIn, onSwitch }) {
               <label style={{ fontSize: "0.76rem", fontWeight: 700, color: "#1e2d45", display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.06em" }}>
                 Full Name
               </label>
-              <input className="form-input" placeholder="John Doe" value={form.name} onChange={set("name")} required />
+              <input className="form-input" placeholder="Enter your Name" value={form.name} onChange={set("name")} required />
             </div>
           )}
           <div>
             <label style={{ fontSize: "0.76rem", fontWeight: 700, color: "#1e2d45", display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.06em" }}>
               Email
             </label>
-            <input className="form-input" type="email" placeholder="you@example.com" value={form.email} onChange={set("email")} required />
+            <input className="form-input" type="email" placeholder="Eneter Your EmailID" value={form.email} onChange={set("email")} required />
           </div>
           <div>
             <label style={{ fontSize: "0.76rem", fontWeight: 700, color: "#1e2d45", display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.06em" }}>
